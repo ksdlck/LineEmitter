@@ -1,0 +1,13 @@
+{EventEmitter} = require \events
+
+class exports.LineEmitter extends EventEmitter
+  !(@stream)->
+    @buf = ""
+    @stream.on \data !(d)~>
+      ls = "#d".split /[\r\n]/
+      if ls.length > 1
+        @emit \line @buf + "#{ls.shift ()}"
+        @buf = ls.pop ()
+        @emit \line l for l of ls
+      else
+        @buf += l

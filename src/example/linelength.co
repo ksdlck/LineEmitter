@@ -1,0 +1,7 @@
+{LineEmitter} = require \../lib/lineemitter
+
+le = new LineEmitter process.stdin
+
+le.on \line !(l)-> console.log l.length
+
+process.stdin.resume () # stdin is normally paused
