@@ -1,6 +1,6 @@
 {
   "author": "Karel Sedláček <k@ksdlck.com> (http://ksdlck.com)",
-  "name": "LineEmitter",
+  "name": "lineemitter",
   "description": "Line events from a readable stream for Node.js",
   "version": "0.0.1",
   "homepage": "https://github.com/ksdlck/LineEmitter",
